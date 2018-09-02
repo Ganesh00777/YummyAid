@@ -1,0 +1,14 @@
+#header1{
+  background-color: #092d4f;
+  border-color: #014b7b;
+  color:white;
+ /* min-height:80px;*/
+  padding: 8px 15px 8px 50px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 9000;
+  min-height: 40px;
+
+}

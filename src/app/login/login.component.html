@@ -1,0 +1,142 @@
+<!--<div class="wrapper">
+<header class="masthead text-center">
+  <div class="container bg-primary">
+    <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+    <h1 class="text-uppercase mb-0">Login-In </h1>
+    <hr class="star-light">
+    <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+  </div>
+</header>-->
+
+
+
+
+<div class="" style="margin-top:50px;">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <!--tabs-->
+            <div>
+                <tabset [justified]="true">
+                  <tab heading="Customers">
+                    <form class="form-signin">
+                      <div class="form-label-group">
+                        <input type="text" id="inputEmail" name="imputUser" class="form-control" placeholder="UID" pattern="[a-zA-Z]+" required autofocus>
+                        <label for="inputEmail">UID</label>
+                      </div>
+
+
+                      <!--<div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember password</label>
+                      </div>-->
+                      <button class="btn btn-lg btn-login btn-block text-uppercase" (click)="login('stall')" type="submit">Sign in</button>
+                      <!--<hr class="my-4">-->
+                      <!--<button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>-->
+                      <!--<button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>-->
+                    </form>
+                  </tab>
+
+                  <!--<tab>
+                    <ng-template tabHeading>
+                      <span> <i class="fa fa-users" aria-hidden="true"></i>  </span>
+                      Customers
+                    </ng-template>
+                     <button class="btn btn-all text-center"> GO ->  </button>
+                  </tab>-->
+
+
+                  <tab heading="Stall">
+                      <form class="form-signin">
+                          <div class="form-label-group">
+                            <input type="text" id="inputEmail" name="imputUser" class="form-control" placeholder="UID" pattern="[a-zA-Z]+" required autofocus>
+                            <label for="inputEmail">UID</label>
+                          </div>
+
+                          <div class="form-label-group">
+                            <input type="password" id="inputPassword" name="inputPass" class="form-control" placeholder="Password" required>
+                            <label for="inputPassword">Password</label>
+                          </div>
+
+                          <!--<div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Remember password</label>
+                          </div>-->
+                          <button class="btn btn-lg btn-login btn-block text-uppercase" (click)="login('stall')" type="submit">Sign in</button>
+                          <!--<hr class="my-4">-->
+                          <!--<button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>-->
+                          <!--<button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>-->
+                        </form>
+                  </tab>
+                  <tab heading="Admin">
+                      <alert type="danger" *ngIf="userInputs">
+                        <strong>Sheay !</strong> <a href="#" class="alert-link">You forgot to enter the correct credentials </a>.
+                      </alert>
+                      <form class="form-signin">
+                          <div class="form-label-group">
+                            <input type="text" id="inputEmail1" class="form-control" placeholder="UID" required autofocus>
+                            <label for="inputEmail1">UID</label>
+                          </div>
+
+                          <div class="form-label-group">
+                            <input type="password" id="inputPassword1" class="form-control" placeholder="Password" required>
+                            <label for="inputPassword1">Password</label>
+                          </div>
+                          <button class="btn btn-lg btn-login btn-block text-uppercase" (click)="login('admin')" type="submit">Sign in</button>
+                        </form>
+                  </tab>
+                </tabset>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<!--<section style="padding-top:6%">
+  <div class="container bg-img">
+    <h2 class="title-1 text-center">Login-In </h2>
+    <div>
+        <tabset [justified]="true">
+          <tab heading="Customers">
+            <button class="btn btn-primary"> GO ->  </button>
+          </tab>
+          <tab heading="ST"> Stall </tab>
+          <tab heading="Admin"> Admin </tab>
+        </tabset>
+    </div>
+  </div>
+</section>-->
+
+<!--</div>-->
+
+
+
+
+
+
+<!--<div class="example-container">
+
+  login
+
+  <alert type="success">
+    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+  </alert>
+  <alert type="info">
+    <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+  </alert>
+  <alert type="warning">
+    <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+  </alert>
+  <alert type="danger">
+    <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+  </alert>
+
+
+</div>-->

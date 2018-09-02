@@ -1,0 +1,155 @@
+<div class="">
+    <div class="col-sm-9 col-md-12 col-lg-12 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Stall</h5>
+          <!--tabs-->
+          <div>
+            <tabset [justified]="true">
+              <tab heading="Customer">
+                <div class="row">
+                    <div class="row planstodiscuss" style="background:#ebebeb;">
+                        <div class="col-md-3"  style="margin-top: 10px;margin-bottom :10px;">
+                          User Id : U42946
+                        </div>
+                          <div class="col-md-3" style="margin-top: 10px;margin-bottom :10px;">
+                              <button class="btnAdd"   type="submit">View Balance</button>
+                             </div>
+
+                      </div>
+                      <div class="row planstodiscuss" style="background:#ebebeb;margin-top:10px;">
+                          <div class="col-md-3"  style="margin-top: 10px;margin-bottom :10px;">
+                            Balance : 100
+                          </div>
+                          <div class="col-md-3" style="margin-top: 10px;margin-bottom :10px;">
+                              <button class="btnAdd"  type="submit" (click)="openModal(template)">Place Order</button>
+                             </div>
+
+
+                        </div>
+                </div>
+
+                </tab>
+
+                  <!--<tab>
+                  <ng-template tabHeading>
+                    <span> <i class="fa fa-users" aria-hidden="true"></i>  </span>
+                    Customers
+                  </ng-template>
+                   <button class="btn btn-all text-center"> GO ->  </button>
+                </tab>-->
+
+
+                  <tab heading="Transactions">
+                    <div class="row planstodiscuss" style="background:#ebebeb">
+
+                      <div class="col-sm-3 col-md-4">
+                        Customer ID(UID)
+                      </div>
+                      <div class="col-sm-3 col-md-4">
+                        Amount
+                      </div>
+                      <div class="col-sm-3 col-md-4">
+                        Time
+                      </div>
+                    </div>
+                    <div class="row planstodiscuss">
+
+                      <div class="col-sm-3 col-md-4">
+                       U42946
+                      </div>
+                      <div class="col-sm-3 col-md-4">
+                        200
+                      </div>
+                      <div class="col-sm-3 col-md-4">
+                        16:00
+                      </div>
+                    </div>
+                    <div class="row planstodiscuss">
+
+                        <div class="col-sm-3 col-md-4">
+                            U42006
+                           </div>
+                           <div class="col-sm-3 col-md-4">
+                             400
+                           </div>
+                           <div class="col-sm-3 col-md-4">
+                             16:01
+                           </div>
+                    </div>
+                    <div class="row planstodiscuss">
+
+                        <div class="col-sm-3 col-md-4">
+                            U42945
+                           </div>
+                           <div class="col-sm-3 col-md-4">
+                             200
+                           </div>
+                           <div class="col-sm-3 col-md-4">
+                             18:01
+                           </div>
+                    </div>
+                    <div class="row planstodiscuss">
+
+
+                          <div class="col-sm-3 col-md-4">
+                              U66853
+                             </div>
+                             <div class="col-sm-3 col-md-4">
+                               200
+                             </div>
+                             <div class="col-sm-3 col-md-4">
+                               19:01
+                             </div>
+                    </div>
+
+                  </tab>
+
+            </tabset>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #template>
+        <div class="modal-header" style="background:#ebebeb">
+          <h4 class="modal-title pull-left">Place Order</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <form class="form-signin">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                  <div class="form-label-group">
+                    <input type="text" id="inputEmail" name="imputUser" class="form-control" placeholder="Debit" pattern="[a-zA-Z]+" required autofocus>
+                    <label for="inputEmail">Debit</label>
+                  </div>
+                </div>
+                </div>
+
+
+
+                  <!--<div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Remember password</label>
+                  </div>-->
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                  <button class="btn btn-lg btn-login btn-block text-uppercase" (click)="login('stall')" type="submit">Ok</button>
+                  </div>
+                  </div>
+                  <!--<hr class="my-4">-->
+                  <!--<button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>-->
+                  <!--<button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>-->
+                </form>
+          </div>
+        </div>
+      </ng-template>
